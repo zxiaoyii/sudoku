@@ -2,7 +2,7 @@
 
 A static mock website for a Sudoku game, built with pure HTML and CSS.
 
-**Live Site:** 
+**Live Site:** https://zxiaoyii.github.io/sudoku/
 **Repository:** https://github.com/zxiaoyii/sudoku
 
 ---
