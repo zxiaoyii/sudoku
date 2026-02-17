@@ -4,6 +4,7 @@ A static mock website for a Sudoku game, built with pure HTML and CSS.
 
 **Live Site:** https://zxiaoyii.github.io/sudoku/
 **Repository:** https://github.com/zxiaoyii/sudoku
+**Demo Video:** https://northeastern-my.sharepoint.com/:v:/g/personal/zhuang_xia_northeastern_edu/IQBf0jitAko8QppzUA4KCn00AeFsAX1moU-h8VuIz-z-gCg?e=xIfREa&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 ---
 
