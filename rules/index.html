@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules - Sudoku</title>
+  <link rel="stylesheet" href="../common/style.css">
+  <style>
+    .rules-section {
+      background-color: var(--surface);
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    .rules-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .rules-section p {
+      color: var(--subtext);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .rules-section ol {
+      padding-left: 20px;
+      color: var(--subtext);
+      line-height: 2;
+    }
+
+    .rules-section ol li {
+      margin-bottom: 8px;
+    }
+
+    .rules-section h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 16px 0 8px;
+    }
+
+    .credits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .credit-card {
+      background-color: var(--bg);
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .credit-card h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .credit-card h5 {
+      font-size: 0.8rem;
+      color: var(--subtext);
+      font-weight: 400;
+    }
+
+    .credit-card a {
+      font-size: 0.85rem;
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .credit-card a:hover {
+      color: var(--text);
+    }
+
+    .credit-card h6 {
+      font-size: 0.75rem;
+      color: var(--subtext);
+      font-weight: 400;
+    }
+
+    @media (max-width: 430px) {
+      .credits-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-title" href="/">Sudoku</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/selection/">Play</a></li>
+      <li><a href="/rules/" class="active">Rules</a></li>
+      <li><a href="/high-scores/">High Scores</a></li>
+      <li><a href="/login/">Login</a></li>
+      <li><a href="/register/">Register</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrapper">
+    <h1 class="page-title">How to Play</h1>
+
+    <div class="rules-section">
+      <h2>What is Sudoku?</h2>
+      <p>Sudoku is a logic-based number placement puzzle. The goal is to fill a grid with digits so that each row, column, and subgrid contains every number exactly once.</p>
+      <p>No math is required — just pure logic and pattern recognition. Anyone can learn to play in minutes!</p>
+    </div>
+
+    <div class="rules-section">
+      <h2>Basic Rules</h2>
+      <ol>
+        <li>Each row must contain every number from 1 to 9 (or 1 to 6 for the easy mode) with no repeats.</li>
+        <li>Each column must also contain every number exactly once.</li>
+        <li>Each smaller subgrid must contain every number exactly once.</li>
+        <li>Numbers that are already filled in at the start cannot be changed.</li>
+        <li>The puzzle is complete when every cell is correctly filled.</li>
+      </ol>
+    </div>
+
+    <div class="rules-section">
+      <h2>Game Modes</h2>
+      <h3>Hard Mode — 9x9</h3>
+      <p>The classic Sudoku experience. Fill a 9x9 grid divided into nine 3x3 subgrids using numbers 1 through 9.</p>
+      <h3>Easy Mode — 6x6</h3>
+      <p>A smaller and friendlier version. Fill a 6x6 grid divided into six 2x3 subgrids using numbers 1 through 6. Great for beginners!</p>
+    </div>
+
+    <div class="rules-section">
+      <h2>Tips for Beginners</h2>
+      <ol>
+        <li>Start with rows, columns, or subgrids that already have the most numbers filled in.</li>
+        <li>Look for numbers that can only go in one place within a row, column, or subgrid.</li>
+        <li>Use a process of elimination — if a number already appears in a row or column, it cannot appear again.</li>
+        <li>Take your time. Sudoku rewards patience and careful observation.</li>
+      </ol>
+    </div>
+
+    <div class="rules-section">
+      <h2>Credits</h2>
+      <p>This game was designed and built as a passion project. Feel free to reach out!</p>
+      <div class="credits-grid">
+        <div class="credit-card">
+          <h4>Xiaoyi Zhuang</h4>
+          <h5>Designer & Developer</h5>
+          <a href="mailto:zhuang.xia@northeastern.edu">zhuang.xia@northeastern.edu</a>
+          <a href="https://github.com/zxiaoyii" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/xiaoyizhuang/" target="_blank">LinkedIn</a>
+          <h6>Seattle, WA</h6>
+        </div>
+        <div class="credit-card">
+          <h4>Built With</h4>
+          <h5>HTML & CSS only — no frameworks</h5>
+          <a href="https://fonts.google.com" target="_blank">Poppins via Google Fonts</a>
+          <h6>A personal project built from scratch to learn the fundamentals of web design.</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

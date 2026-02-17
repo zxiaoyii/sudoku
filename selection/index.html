@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play - Sudoku</title>
+  <link rel="stylesheet" href="../common/style.css">
+  <style>
+    .section-label {
+      font-size: 0.85rem;
+      color: var(--subtext);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .game-table {
+      background-color: var(--surface);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+
+    .game-table table {
+      width: 100%;
+    }
+
+    .game-table th {
+      font-size: 0.85rem;
+      padding: 14px 16px;
+      text-align: left;
+      background-color: var(--accent2);
+      color: var(--text);
+    }
+
+    .game-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--accent2);
+      color: var(--text);
+    }
+
+    .game-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .game-table tbody tr:hover {
+      background-color: var(--accent2);
+    }
+
+    .game-link {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .game-link:hover {
+      color: var(--text);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .badge-hard {
+      background-color: #f5c6d0;
+      color: #a0405a;
+    }
+
+    .badge-easy {
+      background-color: #c6e8d0;
+      color: #2d7a4f;
+    }
+
+    .difficulty-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    @media (max-width: 430px) {
+      .game-table th,
+      .game-table td {
+        padding: 10px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-title" href="/">Sudoku</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/selection/" class="active">Play</a></li>
+      <li><a href="/rules/">Rules</a></li>
+      <li><a href="/high-scores/">High Scores</a></li>
+      <li><a href="/login/">Login</a></li>
+      <li><a href="/register/">Register</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrapper">
+    <h1 class="page-title">Select a Game</h1>
+
+    <p class="section-label">Hard — 9x9</p>
+    <div class="difficulty-title">Challenge Mode</div>
+    <div class="game-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Game Name</th>
+            <th>Author</th>
+            <th>Difficulty</th>
+            <th>Best Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a class="game-link" href="../hard-game/">Morning Storm</a></td>
+            <td>Alice Chen</td>
+            <td><span class="badge badge-hard">Hard</span></td>
+            <td>14:32</td>
+          </tr>
+          <tr>
+            <td><a class="game-link" href="../hard-game/">Midnight Puzzle</a></td>
+            <td>James Wu</td>
+            <td><span class="badge badge-hard">Hard</span></td>
+            <td>18:05</td>
+          </tr>
+          <tr>
+            <td><a class="game-link" href="../hard-game/">The Labyrinth</a></td>
+            <td>Sofia Reyes</td>
+            <td><span class="badge badge-hard">Hard</span></td>
+            <td>22:47</td>
+          </tr>
+          <tr>
+            <td><a class="game-link" href="../hard-game/">Deep Ocean</a></td>
+            <td>Liam Park</td>
+            <td><span class="badge badge-hard">Hard</span></td>
+            <td>16:19</td>
+          </tr>
+          <tr>
+            <td><a class="game-link" href="../hard-game/">Silver Peak</a></td>
+            <td>Mia Johnson</td>
+            <td><span class="badge badge-hard">Hard</span></td>
+            <td>20:33</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="section-label">Easy — 6x6</p>
+    <div class="difficulty-title">Casual Mode</div>
+    <div class="game-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Game Name</th>
+            <th>Author</th>
+            <th>Difficulty</th>
+            <th>Best Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a class="game-link" href="../easy-game/">Spring Breeze</a></td>
+            <td>Emma Liu</td>
+            <td><span class="badge badge-easy">Easy</span></td>
+            <td>05:12</td>
+          </tr>
+          <tr>
+            <td><a class="game-link" href="../easy-game/">Sunny Garden</a></td>
+            <td>Noah Kim</td>
+            <td><span class="badge badge-easy">Easy</span></td>
+            <td>04:48</td>
+          </tr>
+          <tr>
+            <td><a class="game-link" href="../easy-game/">Cotton Cloud</a></td>
+            <td>Ava Tanaka</td>
+            <td><span class="badge badge-easy">Easy</span></td>
+            <td>06:30</td>
+          </tr>
+          <tr>
+            <td><a class="game-link" href="../easy-game/">Petal Path</a></td>
+            <td>Ethan Brown</td>
+            <td><span class="badge badge-easy">Easy</span></td>
+            <td>03:55</td>
+          </tr>
+          <tr>
+            <td><a class="game-link" href="../easy-game/">Lemon Drop</a></td>
+            <td>Olivia Marsh</td>
+            <td><span class="badge badge-easy">Easy</span></td>
+            <td>07:21</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
